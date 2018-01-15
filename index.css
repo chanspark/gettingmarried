@@ -9,6 +9,9 @@ body {
     padding-bottom: 50px;
     word-break: keep-all;
 }
+.bold {
+    font-weight: bold;
+}
 
 .map {
     width: 100%;
