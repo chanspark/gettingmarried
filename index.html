@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-    <title>찬수 & 서희. 결혼합니다.</title>
-    <!-- <title>네이버지도</title> -->
+    <!-- <title>찬수 & 서희. 결혼합니다.</title> -->
+    <title>네이버지도</title>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="description" content="찬수&서희 결혼식 모바일 청첩장" />
-    <meta name="keywords" content="찬수&서희 결혼식 오는방법, 청첩장, 모바일">
+    <meta name="description" content="찬수 & 서희 결혼식 오는 방법 대공개" />
+    <meta name="keywords" content="찬수 & 서희 결혼식 오는방법, 청첩장, 모바일">
     <meta name="author" content="chanseohee" />
 
     <!-- Facebook related metatags -->
@@ -29,9 +29,28 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 </head>
 <body>
+<div>
+    <img src="CS.jpg" alt="" class="img-fluid">
+</div>
 
+<div class="">
+    <h2>오시는 길</h2>
+    <p>네이버 지도를 통해 알려드립니다.</p>
+    <div id="map" style="width:100%;height:400px;"></div>
 
-<div id="map" style="width:100%;height:400px;"></div>
+    <h2>길찾기</h2>
+    <button>오송역</button>
+    <button>청주역</button>
+    <button>청주 터미널</button>
+    <button>증평 터미널</button>
+
+    <h2></h2>
+    <ul>
+        <li>아아</li>
+    </ul>
+
+</div>
+
 
 
 
@@ -40,14 +59,51 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
+<!-- 타입킷, 본명조 및 본고딕 -->
+<script src="https://use.typekit.net/egf1zao.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 <!-- 네이버 지도 옵션 -->
 <script>
-        var mapOptions = {
-            center: new naver.maps.LatLng(37.3595704, 127.105399),
-            zoom: 10
-        };
+        // var mapOptions = {
+        //     center: new naver.maps.LatLng(36.702442, 127.505035),
+        //     zoom: 10
+        // };
+
+        // var map = new naver.maps.Map('map', {
+        //     center: new naver.maps.LatLng(36.702442, 127.505035),
+        //     zoom: 10
+        // });
+
+        // var marker = new naver.maps.Marker({
+        //     position: new naver.maps.LatLng(36.702442, 127.505035),
+        //     map: map
+        // });
         
-        var map = new naver.maps.Map('map', mapOptions);
+        // var map = new naver.maps.Map('map', mapOptions);
+
+
+        var position = new naver.maps.LatLng(36.702442, 127.505035);
+
+        var map = new naver.maps.Map('map', {
+            center: position,
+            zoom: 10
+        });
+
+        var markerOptions = {
+            position: position,
+            map: map,
+            icon: {
+                url: './img/pin_default.png',
+                size: new naver.maps.Size(22, 35),
+                origin: new naver.maps.Point(0, 0),
+                anchor: new naver.maps.Point(11, 35)
+            }
+        };
+
+        var marker = new naver.maps.Marker(markerOptions);
+
+
         </script>
 </body>
 </html>
