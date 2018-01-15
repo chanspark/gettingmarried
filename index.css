@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body {
+    text-align: center;
+    font-family: 'Nanum Gothic';
+    color: #333;
+    padding-bottom: 50px;
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+}
+
+.invitation-img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 1.7em;
+    margin: 24px 0;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 1.3em;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #333;
+}
+
+dl {
+    text-align: left;
+    padding: 5px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+a:link, a:visited, a:active, a:hover {
+    color: #fff !important;
+}
+
+.btn {
+    background-color: #21c030;
+    -webkit-box-shadow: inset 1px 1px 5px rgba(0,0,0,.5);
+    -moz-box-shadow: inset 1px 1px 5px rgba(0,0,0,.5);
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,.5);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    cursor: pointer;
+    color: #fff;
+}
+
+.link-group {
+    padding: 0 5px;
+}

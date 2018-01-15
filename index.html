@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>찬수 & 서희. 결혼합니다.</title>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="description" content="찬수&서희 결혼식 모바일 청첩장" />
+    <meta name="description" content="찬수&서희 결혼식 모바일 청첩장"/>
     <meta name="keywords" content="찬수&서희 결혼식 오는방법, 청첩장, 모바일">
-    <meta name="author" content="chanseohee" />
+    <meta name="author" content="chanseohee"/>
 
     <!-- Facebook related metatags -->
     <meta property="fb:app_id" content="">
@@ -23,28 +24,78 @@
     <meta property="og:type" content="website">
 
     <!-- 네이버 지도 및 부트스트랩 -->
-    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=27YfA2TvDHQRzsZAg9eW&submodules=geocoder"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script type="text/javascript"
+            src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=27YfA2TvDHQRzsZAg9eW&submodules=geocoder"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
 
 
-<div id="map" style="width:100%;height:400px;"></div>
-
 <!-- 부트스트랩 스크립트 -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+
+<img class="invitation-img" src="./CS.jpg" alt="">
+<div id="map" class="map"></div>
+<h1>찾아오시는 길</h1>
+<h2>고속버스 이용 시</h2>
+<dl>
+    <dt>청주 북부터미널행 버스</dt>
+    <dd>
+        <ul>
+            <li>청주성모병원(중간하차) > 택시이용(약 10분소요)</li>
+            <li>북부터미널 하차 > 청주대 정문 > 증평방향 시내버스(111,115) > 원통 2리 하차 > 우리 어린이집 방향(도보 5분)</li>
+        </ul>
+    </dd>
+    <dt>청주 가경버스터미널행 버스</dt>
+    <dd>
+        <ul>
+            <li>가경터미널에서 좌석버스(105번) > 그랜드플라자호텔, 신흥고 하차 > 증평방향 시내버스(111,115) >
+                원통 2리 하차 > 우리 어린이집 방향(도보 5분)
+            </li>
+        </ul>
+    </dd>
+</dl>
+<h2>네이버 지도 길찾기</h2>
+<div class="link-group">
+    <a class="btn btn-block" target="_blank"
+       href="https://m.map.naver.com/directions/?menu=route&sname=%EC%B2%AD%EC%A3%BC%EA%B3%A0%EC%86%8D%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90&sx=36.626957&sy=127.430983&ename=%EC%84%B1%EB%AA%A8%EA%BD%83%EB%A7%88%EC%9D%84&ex=36.702416&ey=127.504981&pathType=0&showMap=true#/drive/list/%25EC%25B2%25AD%25EC%25A3%25BC%25EA%25B3%25A0%25EC%2586%258D%25EB%25B2%2584%25EC%258A%25A4%25ED%2584%25B0%25EB%25AF%25B8%25EB%2584%2590,127.4309880,36.6267490,127.4307639,36.6276750,false,13519821/%25EC%2584%25B1%25EB%25AA%25A8%25EA%25BD%2583%25EB%25A7%2588%25EC%259D%2584,127.5050531,36.7019496,127.5056718,36.7026319,false,p32216841/2">청주고속버스터미널에서
+        오시는 길</a>
+    <a class="btn btn-block" target="_blank"
+       href="https://m.map.naver.com/directions/?menu=route&sname=증평시외버스터미널&sx=36.626957&sy=127.430983&ename=성모꽃마을&ex=36.702416&ey=127.504981&pathType=0&showMap=true#/drive/list/%25EC%25A6%259D%25ED%258F%2589%25EC%258B%259C%25EC%2599%25B8%25EB%25B2%2584%25EC%258A%25A4%25ED%2584%25B0%25EB%25AF%25B8%25EB%2584%2590,127.5825724,36.7858741,127.5819870,36.7860230,false,13323591/%25EC%2584%25B1%25EB%25AA%25A8%25EA%25BD%2583%25EB%25A7%2588%25EC%259D%2584,127.5050531,36.7019496,127.5056718,36.7026319,false,p32216841/2">증평시외버스터미널에서 오시는 길
+        오시는 길</a>
+    <a class="btn btn-block" target="_blank"
+       href="https://m.map.naver.com/directions/?menu=route&sname=%EC%98%A4%EC%86%A1%EC%97%AD&sx=36.626957&sy=127.430983&ename=%EC%84%B1%EB%AA%A8%EA%BD%83%EB%A7%88%EC%9D%84&ex=36.702416&ey=127.504981&pathType=0&showMap=true#/drive/list/%25EC%2598%25A4%25EC%2586%25A1%25EC%2597%25AD%2520%25EC%25B6%25A9%25EB%25B6%2581%25EC%2584%25A0,127.3275823,36.6200981,127.3297639,36.6200917,false,11636688/%25EC%2584%25B1%25EB%25AA%25A8%25EA%25BD%2583%25EB%25A7%2588%25EC%259D%2584,127.5050531,36.7019496,127.5056718,36.7026319,false,p32216841/2">오송역에서
+        오시는 길</a>
+    <a class="btn btn-block" target="_blank"
+       href="https://m.map.naver.com/directions/?menu=route&sname=%EC%B2%AD%EC%A3%BC%EC%97%AD&sx=36.626957&sy=127.430983&ename=%EC%84%B1%EB%AA%A8%EA%BD%83%EB%A7%88%EC%9D%84&ex=36.702416&ey=127.504981&pathType=0&showMap=true#/drive/list/%25EC%25B2%25AD%25EC%25A3%25BC%25EC%2597%25AD%2520%25EC%25B6%25A9%25EB%25B6%2581%25EC%2584%25A0,127.3923500,36.6470900,,,false,11636761/%25EC%2584%25B1%25EB%25AA%25A8%25EA%25BD%2583%25EB%25A7%2588%25EC%259D%2584,127.5050531,36.7019496,127.5056718,36.7026319,false,p32216841/2">청주역에서
+        오시는 길</a>
+</div>
+
+</body>
 
 <!-- 네이버 지도 옵션 -->
 <script>
-        var mapOptions = {
-            center: new naver.maps.LatLng(37.3595704, 127.105399),
-            zoom: 10
-        };
-        
-        var map = new naver.maps.Map('map', mapOptions);
-        </script>
-</body>
-test
+    var mapOptions = {
+        center: new naver.maps.LatLng(36.702373, 127.505003),
+        zoom: 10
+    };
+
+    var map = new naver.maps.Map('map', mapOptions);
+
+    var marker = new naver.maps.Marker({
+        position: new naver.maps.LatLng(36.702373, 127.505003),
+        map: map
+    });
+
+</script>
 </html>
