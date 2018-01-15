@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body {
+    text-align: center;
+    font-family: 'Nanum Gothic';
+    color: #333;
+    padding-bottom: 50px;
+    word-break: keep-all;
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 40px;
+}
+
+.invitation-img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 1.7em;
+    margin: 24px 0;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 1.3em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+dt {
+    text-align: center;
+    font-size: 18px;
+}
+dl {
+    text-align: left;
+    padding: 5px;
+}
+dd {
+    text-align: center;
+    margin-bottom: 15px;
+}
+ul {
+    padding-left: 20px;
+    text-align: center;
+}
+.iw_inner {
+    padding: 10px;
+}
+.iw_inner h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.iw_inner p {
+    margin-bottom: 0;
+}
+/* 
+a:link, a:visited, a:active, a:hover {
+    color: #fff !important;
+} */
+/* 
+.btn {
+    background-color: #21c030;
+    -webkit-box-shadow: inset 1px 1px 5px rgba(0,0,0,.5);
+    -moz-box-shadow: inset 1px 1px 5px rgba(0,0,0,.5);
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,.5);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    cursor: pointer;
+    color: #fff;
+} */
+.btn {
+    margin-bottom: 15px;
+}
+.btn span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.link-group {
+    padding: 0 5px;
+    margin-bottom: 40px;
+}
